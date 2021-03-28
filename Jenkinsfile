@@ -20,7 +20,7 @@ pipeline {
         stage('Package') { 
             steps {
                 //
-              bat "mvn package -f First-Web-App"
+              bat "mvn package -f FirstWebApp"
             }
         }
         stage('SonarQube analysis') {

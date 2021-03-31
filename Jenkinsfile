@@ -34,9 +34,7 @@ pipeline {
  
 
                }}}
-        
-        
-        stage('upload to artifactory'){
+                stage('upload to artifactory'){
                
            steps{
       rtUpload (
@@ -55,6 +53,9 @@ pipeline {
                     serverId: 'artifactory_server',
                 )
            }
-           }
+           }   
+
+        
+        
     }
 }

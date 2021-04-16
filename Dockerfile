@@ -1,3 +1,3 @@
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
-CMD ['hostname']
-
+FROM centos
+ 
+CMD ["echo", "Hello World...! from my ist docker image"]
